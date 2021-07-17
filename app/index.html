@@ -6,8 +6,66 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Relap</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="top-background">
+        <header class="header">
+            <div class="wrapper flex flex_align-center flex_space-between">
+                <picture>
+                    <source srcset="assets/images/logo2x.png" media="(min-width: 600px)">
+                    <img src="assets/images/logo.png" alt="expice">
+                </picture>
+                <div class="nav-toggle">
+                    <input type="checkbox" id="toggle">
+                    <label class="nav-toggle__label" for="toggle">
+                        <span class="nav-toggle__line nav-toggle__line_first"></span>
+                        <span class="nav-toggle__line nav-toggle__line_second"></span>
+                        <span class="nav-toggle__line nav-toggle__line_third"></span>
+                        <span class="nav-toggle__line nav-toggle__line_fourth"></span>
+                    </label>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="" class="nav__link">Features </a></li>
+                            <li class="nav__item"><a href="" class="nav__link">Works </a></li>
+                            <li class="nav__item"><a href="" class="nav__link">About </a></li>
+                            <li class="nav__item"><a href="" class="nav__link">People</a></li>
+                            <li class="nav__item"><a href="" class="nav__link">News</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
+        <section>
+            <div class="banner wrapper">
+                <h1 class="banner__title">Omnis Voluptas</h1>
+                <p class="text banner__text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <button type="button" class="button button__clr-yellow button__banner">Explore</button>
+            </div>
+            <div class="banner__img">
+                <picture>
+                    <source srcset="assets/images/computer-banner2x.png" media="(min-width: 800px)" class="banner__img_big">
+                    <img src="assets/images/computer-banner.png" alt="expice" class="banner__img_small">
+                </picture>
+                <picture>
+                    <source srcset="assets/images/oval-deks-1.png" media="(min-width: 800px)" class="banner__oval banner__oval_big-1">
+                    <img src="assets/images/oval-phone-1.png" alt="expice" class="banner__oval banner__oval_small-1">
+                    <source srcset="assets/images/oval-deks-2.png" media="(min-width: 800px)" class="banner__oval banner__oval_big-2">
+                    <img src="assets/images/oval-phone-2.png" alt="expice" class="banner__oval banner__oval_small-2">
+                    <source srcset="assets/images/oval-deks-3.png" media="(min-width: 800px)" class="banner__oval banner__oval_big-3">
+                    <img src="assets/images/oval-phone-3.png" alt="expice" class="banner__oval banner__oval_small-3">
+                    <source srcset="assets/images/oval-deks-4.png" media="(min-width: 800px)" class="banner__oval banner__oval_big-4">
+                    <img src="assets/images/oval-phone-4.png" alt="expice" class="banner__oval banner__oval_small-4">
+                </picture>
+            </div>
+            <div class="banner__icons flex">
+                <img src="assets/icons/feecebook-icon.png" alt="feecebook" class="banner__icon banner__icon_1">
+                <img src="assets/icons/twitter-icon.png" alt="twitter" class="banner__icon banner__icon_2">
+                <img src="assets/icons/instagram-icon.png" alt="instagram" class="banner__icon banner__icon_3">
+            </div>
+        </section>
+    </div>
 </body>
 </html>

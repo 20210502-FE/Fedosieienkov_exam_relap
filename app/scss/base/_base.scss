@@ -19,7 +19,23 @@ li {
   list-style: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+
+  @include respond-to(phone-only) {
+    max-width: calc(100% - 30px);
+  }
+
+  @include respond-to(tablet-portrait) {
+    max-width: calc(100% - 30px);
+  }
+
+  @include respond-to(desktop) {
+    max-width: calc(100% - 270px);
+  }
+}
+
+.text {
+
 }

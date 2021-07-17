@@ -1,0 +1,82 @@
+.top-background {
+  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  height: 759px;
+}
+
+.banner {
+  @include respond-to(phone-only) {
+    padding-top: 23px;
+  }
+
+  &__title{
+    font-family: $p-font-bold , sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    color: $color-white;
+  }
+
+  &__text {
+    font-family: $ssr-font-semi-bold , sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-white;
+
+    @include respond-to(phone-only) {
+      padding-top: 23px;
+    }
+  }
+
+  &__oval {
+    position: absolute;
+
+    &_small-1 {
+      left: 0;
+      top: 322px;
+    }
+
+    &_small-2 {
+      right: 0;
+      bottom: 22px;
+    }
+
+    &_small-3 {
+      right: 0;
+      top: -23px;
+      z-index: 2;
+    }
+
+    &_small-4 {
+      right: 0;
+      top: 199px;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    &_small {
+      @include respond-to(phone-only) {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__icons {
+
+    @include respond-to(phone-only) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    padding: 0 4px;
+
+    @include respond-to(phone-only) {
+      padding-top: 289px;
+    }
+  }
+}

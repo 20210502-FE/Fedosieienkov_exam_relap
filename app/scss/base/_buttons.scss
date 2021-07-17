@@ -1,0 +1,25 @@
+.button {
+  font-family: $ssr-font-bold , sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-white;
+  border-radius: 24px;
+  border: none;
+
+  &__banner {
+    padding: 12px 58px;
+
+    @include respond-to(phone-only) {
+      margin-top: 34px;
+    }
+  }
+
+  &__clr-yellow {
+    background-color: $color-yellow;
+  }
+
+  &__clr-lavender {
+    background-color: $color-lavender;
+  }
+}

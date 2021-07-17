@@ -1,3 +1,7 @@
 .header {
-  padding: 15px 0 19px;
+  padding: 16px 0 19px;
+
+  @include respond-to(phone-only) {
+    background: $color-white;
+  }
 }
