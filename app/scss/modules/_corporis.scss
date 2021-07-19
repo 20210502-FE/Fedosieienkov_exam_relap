@@ -1,0 +1,148 @@
+.corporis {
+  background-color: $color-concrete-white;
+
+  &__wrapper {
+    padding-top: 45px;
+  }
+
+  &__title {
+    font-family: $p-font-bold , sans-serif;
+    color: $color-black-gray;
+
+    &_top {
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      padding-bottom: 18px;
+
+      @include respond-to(tablet-landscape) {
+        margin-top: 96px;
+      }
+    }
+
+    &_bottom {
+      font-size: 56px;
+      line-height: 64px;
+      padding-bottom: 55px;
+
+      @include respond-to(tablet-landscape) {
+        max-width: 498px;
+      }
+
+      @include respond-to(phone-only) {
+        font-size: 40px;
+        line-height: 48px;
+        padding-bottom: 40px;
+        width: 356px;
+      }
+    }
+  }
+
+  &__img_desc {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+
+    &-bg {
+      right: 0;
+
+      @include respond-to(phone-only) {
+        width: 355px;
+        top: -322px;
+        border-radius: 3px;
+      }
+
+      @include respond-to(tablet-portrait) {
+        width: 455px;
+        top: -640px;
+        border-radius: 3px;
+      }
+
+      @include respond-to(desktop) {
+        width: 705px;
+        top: -640px;
+        border-radius: 3px;
+      }
+
+    }
+
+    &-main {
+      right: 0;
+      @include respond-to(phone-only) {
+        width: 339px;
+        top: -339px;
+        border-radius: 3px;
+      }
+
+      @include respond-to(tablet-portrait) {
+        width: 439px;
+        top: -671px;
+        border-radius: 3px;
+      }
+
+      @include respond-to(desktop) {
+        width: 672px;
+        top: -671px;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  &__text {
+    padding-bottom: 46px;
+
+    @include respond-to(tablet-landscape) {
+      max-width: 470px;
+      margin-bottom: 8px;
+    }
+
+    @include respond-to(phone-only) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__button {
+    font-family: $ssr-font-semi-bold , sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+
+    &_top {
+      padding-bottom: 8px;
+      position: relative;
+
+      &_line {
+        position: absolute;
+        bottom: 6px;
+      }
+    }
+
+    &_center {
+      padding-bottom: 24px;
+    }
+
+    &_bottom {
+      padding-bottom: 394px;
+
+      @include respond-to(tablet-landscape) {
+        padding-bottom: 183px;
+      }
+    }
+  }
+
+  &__text {
+    font-family: $ssr-font-regular , sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-dusty-gray;
+    padding-bottom: 33px;
+  }
+
+  &__vector {
+    margin-left: 4px;
+  }
+}
+
+

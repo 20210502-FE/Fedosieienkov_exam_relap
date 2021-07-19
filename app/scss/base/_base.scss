@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   min-height: 100%;
   position: relative;
@@ -19,7 +23,22 @@ li {
   list-style: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+
+  @include respond-to(phone-only) {
+    max-width: calc(100% - 30px);
+  }
+
+  @include respond-to(tablet-portrait) {
+    max-width: calc(100% - 70px);
+  }
+
+  @include respond-to(desktop) {
+    max-width: calc(100% - 270px);
+  }
 }
+
+
+

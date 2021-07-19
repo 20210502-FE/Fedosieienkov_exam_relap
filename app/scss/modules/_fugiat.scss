@@ -1,0 +1,89 @@
+.fugiat {
+  padding: 38px 0;
+  background-color: $color-white;
+
+  &__title, &__text {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-family: $p-font-bold , sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: $color-black-gray;
+
+    @include respond-to(tablet-landscape) {
+      font-size: 56px;
+      line-height: 64px;
+      margin-top: 36px;
+    }
+  }
+
+  &__text {
+    font-family: $ssr-font-semi-bold , sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black-gray;
+    max-width: 570px;
+
+    @include respond-to(phone-only) {
+      margin-bottom: 38px;
+    }
+
+    @include respond-to(tablet-landscape) {
+      margin: 24px auto 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @include respond-to(tablet-landscape) {
+      margin-top: 28px;
+    }
+
+    @include respond-to(phone-only) {
+      margin: 0 -13px;
+    }
+
+    @include respond-to(phone-only) {
+      margin: 0 -39px;
+    }
+  }
+
+  &__column {
+    max-width: 322px;
+    text-align: center;
+
+    @include respond-to(phone-only) {
+      padding: 28px 13px;
+    }
+
+    @include respond-to(desktop) {
+      padding: 36px 39px;
+    }
+
+    &_img {
+      margin-bottom: 11px;
+    }
+
+    &_title {
+      font-family: $p-font-bold , sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+      color: $color-black-gray;
+      margin-bottom: 9px;
+    }
+
+    &_text {
+      font-family: $ssr-font-regular , sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-black-gray;
+    }
+  }
+}
+

@@ -1,0 +1,130 @@
+.nav-toggle {
+  width: 20px;
+  height: 15px;
+  position: relative;
+  font-family: $ssr-font-semi-bold , sans-serif;
+
+  @include respond-to(tablet-landscape) {
+    display: none;
+  }
+
+  & input {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 3px;
+    border: none;
+    background-color: $color-lavender;
+
+    &_second {
+      top: 6px;
+    }
+
+    &_third {
+      top: 6px;
+    }
+
+    &_fourth {
+      top: 12px;
+    }
+  }
+}
+
+.nav__tablet {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+
+  &_list {
+    @include respond-to(tablet-landscape) {
+      padding-left: 51px;
+    }
+  }
+
+
+  @include respond-to(tablet-landscape) {
+    &_item {
+      font-family: $ssr-font-semi-bold , sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      padding: 0 15px;
+    }
+
+    a {
+      color: $color-white;
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  display: block;
+  width: 100px;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  transition: .3s all;
+  z-index: 2;
+
+  &__list {
+    position: absolute;
+    top: 22px;
+    background-color: $color-black-gray;
+    width: 115px;
+  }
+
+  &__link {
+    @include respond-to(phone-only) {
+      display: block;
+      width: 100%;
+      color: $color-white;
+      text-decoration: none;
+      padding: 10px;
+      border-top: 1px solid $color-white;
+    }
+  }
+}
+
+#toggle:checked ~ .nav {
+  max-height: 150px;
+  font-size: 16px;
+  visibility: visible;
+}
+
+#toggle:checked + .nav-toggle__label .nav-toggle__line_first {
+  display: none;
+  transition: .3s all;
+}
+
+#toggle:checked + .nav-toggle__label .nav-toggle__line_second {
+  transform: rotate(45deg);
+  transition: .3s all;
+}
+
+#toggle:checked + .nav-toggle__label .nav-toggle__line_third {
+  transform: rotate(-45deg);
+  transition: .3s all;
+}
+
+#toggle:checked + .nav-toggle__label .nav-toggle__line_fourth {
+  display: none;
+  transition: .3s all;
+}

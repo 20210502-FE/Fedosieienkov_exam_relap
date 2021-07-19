@@ -1,0 +1,97 @@
+.temporibus {
+  background-color: $color-blue;
+
+  &__wrapper {
+    position: relative;
+    @include respond-to(tablet-landscape) {
+      display: flex;
+    }
+  }
+
+  &__img_desc {
+    position: relative;
+    display: inline-block;
+
+    @include respond-to(tablet-landscape) {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+
+    &_tablet {
+      margin-top: 155px;
+      margin-left: 65px;
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    &_big {
+      padding-top: 66px;
+    }
+
+    &_oval_1 {
+      top: 84px;
+      right: 7px;
+    }
+
+    &_oval_2 {
+      top: 233px;
+      right: 7px;
+    }
+
+    &_oval_3 {
+      bottom: 6px;
+      right: 54px;
+    }
+
+    &_oval_4 {
+      left: -14px;
+      bottom: 48px;
+    }
+
+    &_oval_5 {
+      top: 55px;
+      left: -14px;
+    }
+  }
+
+  &__text_desc {
+    color: $color-white;
+    margin-top: -23px;
+    margin-bottom: 31px;
+    padding-bottom: 80px;
+
+    @include respond-to(tablet-landscape) {
+      padding-bottom: 209px;
+      margin-left: 195px;
+      margin-top: 75px;
+    }
+  }
+
+  &__title {
+    font-family: $p-font-bold , sans-serif;
+
+    @include respond-to(tablet-landscape) {
+      padding-bottom: 23px;
+    }
+  }
+
+  &__text {
+    font-family: $ssr-font-semi-bold , sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include respond-to(phone-only) {
+      margin-top: -16px;
+    }
+
+    @include respond-to(tablet-landscape) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+

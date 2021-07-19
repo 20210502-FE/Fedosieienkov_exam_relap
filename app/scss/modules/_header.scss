@@ -1,3 +1,13 @@
 .header {
-  padding: 15px 0 19px;
+  padding: 16px 0 19px;
+
+  @include respond-to(phone-only) {
+    background: $color-white;
+  }
+
+  @include respond-to(tablet-landscape) {
+    padding: 32px 0 32px;
+  }
 }
+
+
