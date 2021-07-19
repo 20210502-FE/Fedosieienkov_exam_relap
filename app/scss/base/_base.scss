@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   min-height: 100%;
   position: relative;
@@ -28,7 +32,7 @@ li {
   }
 
   @include respond-to(tablet-portrait) {
-    max-width: calc(100% - 30px);
+    max-width: calc(100% - 70px);
   }
 
   @include respond-to(desktop) {
@@ -36,6 +40,5 @@ li {
   }
 }
 
-.text {
 
-}
+

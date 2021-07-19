@@ -1,6 +1,10 @@
 .top-background {
   background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
   height: 759px;
+
+  @include respond-to(tablet-landscape) {
+    height: 769px;
+  }
 }
 
 .banner {
@@ -10,9 +14,19 @@
 
   &__title{
     font-family: $p-font-bold , sans-serif;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 72px;
+    line-height: 72px;
+    max-width: 335px;
     color: $color-white;
+
+    @include respond-to(tablet-landscape) {
+      padding-top: 114px;
+    }
+
+    @include respond-to(phone-only) {
+      font-size: 56px;
+      line-height: 64px;
+    }
   }
 
   &__text {
@@ -20,6 +34,11 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-white;
+
+    @include respond-to(tablet-landscape) {
+      max-width: 370px;
+      padding-top: 26px;
+    }
 
     @include respond-to(phone-only) {
       padding-top: 23px;
@@ -32,22 +51,39 @@
     &_small-1 {
       left: 0;
       top: 322px;
+
+      @include respond-to(tablet-landscape) {
+        display: none;
+      }
     }
 
     &_small-2 {
       right: 0;
       bottom: 22px;
+
+      @include respond-to(tablet-landscape) {
+        right: -68px;
+        bottom: 541px;
+      }
     }
 
     &_small-3 {
       right: 0;
       top: -23px;
-      z-index: 2;
+
+      @include respond-to(tablet-landscape) {
+        right: 788px;
+        top: -30px;
+      }
     }
 
     &_small-4 {
       right: 0;
       top: 199px;
+
+      @include respond-to(tablet-landscape) {
+        display: none;
+      }
     }
   }
 
@@ -55,6 +91,13 @@
     position: relative;
 
     &_small {
+
+      @include respond-to(tablet-landscape) {
+        position: absolute;
+        right: 134px;
+        bottom: -245px;
+      }
+
       @include respond-to(phone-only) {
         position: absolute;
         right: 0;
@@ -65,6 +108,11 @@
   }
 
   &__icons {
+
+    @include respond-to(tablet-landscape) {
+      margin-right: 130px;
+      justify-content: flex-end;
+    }
 
     @include respond-to(phone-only) {
       display: flex;

@@ -6,7 +6,7 @@
   } @else if $size == tablet-landscape {
     @media only screen and (min-width: 900px) { @content; }
   } @else if $size == desktop {
-    @media only screen and (min-width: 1169px) { @content; }
+    @media only screen and (min-width: 1300px) { @content; }
   } @else if $size == big-desktop {
     @media only screen and (min-width: 1800px) { @content; }
   }

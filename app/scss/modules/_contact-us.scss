@@ -1,0 +1,83 @@
+.bottom_bgc {
+
+  @include respond-to(phone-only) {
+    background-image: url(../../assets/images/contact-us-bg1x.png);
+  }
+
+  @include respond-to(tablet-portrait) {
+    background-image: url(../../assets/images/contact-us-bg2x.png);
+  }
+}
+
+.contact-us {
+
+  &__wrapper {
+    @include respond-to(phone-only) {
+      padding-top: 70px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid $color-mercury;
+    }
+  }
+
+  &__title {
+    font-family: $p-font-bold , sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    color: $color-black-gray;
+    margin-bottom: 24px;
+
+    @include respond-to(tablet-landscape) {
+      padding-top: 136px;
+    }
+
+    @include respond-to(phone-only) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  &__text {
+    font-family: $ssr-font-semi-bold , sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $color-black-gray;
+    margin-bottom: 33px;
+
+    @include respond-to(tablet-landscape) {
+      max-width: 570px;
+      margin: 0 auto;
+      padding-bottom: 33px;
+    }
+  }
+
+  &__content {
+    justify-content: center;
+
+    @include respond-to(tablet-landscape) {
+      padding-bottom: 158px;
+    }
+
+    @include respond-to(phone-only) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__input {
+      width: 370px;
+      height: 48px;
+      background: $color-white;
+      border: 1px solid #DADADA;
+      box-sizing: border-box;
+      border-radius: 3px;
+      padding-left: 18px;
+
+
+      @include respond-to(phone-only) {
+        width: 346px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
